@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>橙子精灵 V1.0.3</title>
+    <style>html,body{height:100%;margin:0}body{font-family:"PingFang SC",system-ui;background:radial-gradient(circle at 18% 8%,#fff1d2,#ffcf82 48%,#f58220);color:#572100}.stage{padding:10vh 8vw}.stage h1{font-size:clamp(50px,10vw,106px);margin:0;letter-spacing:-.07em}.stage p{max-width:620px;line-height:1.8}.stage button{padding:11px 18px;border:0;border-radius:99px;background:#7a2e00;color:#fff;margin-right:8px}footer{position:fixed;left:8vw;bottom:24px;font-size:12px}</style>
+  </head>
+  <body>
+    <main class="stage"><p>ORANGE SPIRIT · V1.0.3</p><h1>橙子精灵</h1><p>橙皮颗粒、参考图叶片、13 组动作、可见眨眼、调皮单眼眨、蹦跳、语音交互与 MCP 控制均已封装。</p><button id="show">显示</button><button id="blink">眨眼</button><button id="mischief">调皮</button><button id="bounce">蹦跳</button><button id="wave">挥手</button><button id="speak">说话</button></main>
+    <footer>Copyright © 2026 Nankong. 保留所有权利</footer>
+    <script type="module">
+      import { createWebPetPlugin, ORANGE_SPIRIT } from './dist/web-pet.js'
+      const pet = createWebPetPlugin(ORANGE_SPIRIT)
+      await pet.mount({ target: document.body, assetBaseUrl: '.', bridgeUrl: 'http://127.0.0.1:8765' })
+      document.querySelector('#show').onclick = () => pet.show()
+      document.querySelector('#blink').onclick = () => pet.playAction('Blink')
+      document.querySelector('#mischief').onclick = () => pet.playAction('Mischief')
+      document.querySelector('#bounce').onclick = () => pet.playAction('Bounce')
+      document.querySelector('#wave').onclick = () => pet.playAction('Wave')
+      document.querySelector('#speak').onclick = () => pet.speak({ text: '你好，我是橙子精灵！' })
+      window.orangeSpirit = pet
+    </script>
+  </body>
+</html>

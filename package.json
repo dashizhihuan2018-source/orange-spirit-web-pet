@@ -1,0 +1,44 @@
+{
+  "name": "web-pet-generator",
+  "version": "1.0.3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --open /demo.html",
+    "build": "tsc -b && vite build",
+    "pretest": "npm run build",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "orange:model:build": "ORANGE_PASS=V1.0.3 /Applications/Blender.app/Contents/MacOS/Blender --background --factory-startup --python tools/blender/build_orange_spirit.py && cp assets/models/orange-spirit-V1.0.3.glb public/assets/models/orange-spirit-V1.0.3.glb",
+    "orange:model:validate": "/Applications/Blender.app/Contents/MacOS/Blender --background --factory-startup --python tools/blender/validate_orange_spirit.py -- assets/source/OrangeSpirit-V1.0.3.blend",
+    "orange:e2e": "node tests/orange-spirit.e2e.mjs",
+    "orange:mcp": "npm --prefix mcp run build && npm --prefix mcp run test:protocol",
+    "voice:greetings": "python3 tools/generate_greetings.py"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@playwright/test": "^1.57.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.181.0",
+    "@vitejs/plugin-react": "^5.1.1",
+    "jsdom": "^27.2.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4",
+    "vitest": "^4.0.15"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "orange-spirit": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/orange-spirit-mcp/build/server.js"],
+      "env": { "ORANGE_PET_BRIDGE_PORT": "8765" }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "blend": "assets/source/OrangeSpirit-V1.0.3.blend",
+  "glb": "assets/models/orange-spirit-V1.0.3.glb",
+  "meshes": 12,
+  "triangles": 39180,
+  "materials": [
+    "MAT_Cheek_FF8F8F",
+    "MAT_Face_3A2418",
+    "MAT_Leaf_55A630",
+    "MAT_OrangeSkin_F58220",
+    "MAT_Stem_6B3E1E"
+  ],
+  "actions": [
+    "Blink",
+    "Bounce",
+    "Celebrate",
+    "Error",
+    "Idle",
+    "Listen",
+    "Mischief",
+    "Shy",
+    "Sleep",
+    "Speak",
+    "Spin",
+    "Think",
+    "Wave"
+  ],
+  "armature": "ARM_OrangeSpirit",
+  "bounds": {
+    "min": [
+      -0.6782,
+      -0.487,
+      -0.0063
+    ],
+    "max": [
+      0.7002,
+      0.47,
+      1.4468
+    ]
+  },
+  "glb_bytes": 2306564,
+  "errors": []
+}

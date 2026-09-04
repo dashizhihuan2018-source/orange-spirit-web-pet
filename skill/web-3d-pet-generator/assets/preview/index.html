@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="可下载、可复制的 Web 3D 桌宠生成 Skill，含三视图、Blender、GLB、网页插件、语音和 MCP 完整流程。" />
+    <title>web-3d-pet-generator · 可复制的专属桌宠 Skill</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='35' r='24' fill='%23F58220'/%3E%3Cellipse cx='39' cy='10' rx='13' ry='6' fill='%2355A630' transform='rotate(-20 39 10)'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回顶部"><span>●</span> web-3d-pet-generator</a>
+      <nav aria-label="页面导航">
+        <a href="#design">设计图</a><a href="#demo">演示</a><a href="#workflow">复用流程</a>
+      </nav>
+      <a class="header-download" href="../../SKILL.md">查看 Skill</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">IMAGE → BLENDER → WEB → MCP</p>
+          <h1>把一个角色想法，<br /><em>变成你的专属桌宠。</em></h1>
+          <p class="lead">一套面向所有创作者的可复制 Skill。换上自己的三视图，就能沿同一套标准完成建模、动作、网页嵌入、语音交互和 MCP 控制。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="../../SKILL.md">查看通用 Skill <span>↗</span></a>
+            <a class="button secondary" href="#demo">播放示例录屏 <span>↓</span></a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>格式</dt><dd>SKILL + BLEND + GLB</dd></div>
+            <div><dt>动作契约</dt><dd>9 个基础动作，可扩展</dd></div>
+            <div><dt>使用范围</dt><dd>角色、品牌 IP、桌面助手</dd></div>
+          </dl>
+        </div>
+        <figure class="hero-specimen">
+          <div class="specimen-grid" aria-hidden="true"></div>
+          <img src="media/hero.png" alt="橙子精灵三维模型四分之三视图" />
+          <figcaption><b>运行范例 / 橙子精灵 V1.0.3</b><span>41,340 tris · 13 actions · 2.20 MB</span></figcaption>
+          <i class="measure measure-x">1.38 m</i><i class="measure measure-y">1.45 m</i>
+        </figure>
+      </section>
+
+      <section class="statement" aria-label="核心价值">
+        <p>不是一次性的模型成品。</p>
+        <strong>它是一条可以反复生成不同桌宠的生产线。</strong>
+      </section>
+
+      <section class="section design-section" id="design">
+        <div class="section-heading">
+          <p class="eyebrow">DESIGN LOCK</p>
+          <h2>三视图，是角色不走样的唯一基准</h2>
+          <p>正面、右侧、背面统一比例和基线。建模先锁定轮廓与侧向厚度，再处理表情、材质和细节；后续只改用户点名的问题，不重新设计已确认部分。</p>
+        </div>
+        <figure class="blueprint">
+          <span class="blueprint-tag">REFERENCE / ORTHOGRAPHIC</span>
+          <img src="media/three-view.png" alt="橙子精灵正面、右侧与背面三视图设计图" />
+          <figcaption>仓库保留原始设计基准，任何人都可将它替换为自己的角色三视图。</figcaption>
+        </figure>
+      </section>
+
+      <section class="section media-section" id="demo">
+        <div class="section-heading compact">
+          <p class="eyebrow">REAL OUTPUT</p>
+          <h2>从手机画面到动作录屏，看到真实运行结果</h2>
+        </div>
+        <div class="media-grid">
+          <figure class="phone-card">
+            <div class="phone-shell">
+              <span class="phone-island"></span>
+              <img src="media/mobile.png" alt="橙子精灵桌宠手机端运行截图" />
+            </div>
+            <figcaption><b>手机端</b><span>390 × 844 实际浏览器视口</span></figcaption>
+          </figure>
+          <figure class="video-card">
+            <video controls playsinline muted poster="media/video-poster.png">
+              <source src="media/demo.mp4" type="video/mp4" />
+            </video>
+            <figcaption><b>交互录屏</b><span>眨眼 · 调皮 · 蹦跳 · 文字回应</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section workflow-section" id="workflow">
+        <div class="section-heading">
+          <p class="eyebrow">REPEATABLE WORKFLOW</p>
+          <h2>替换角色，不必重造流程</h2>
+          <p>Skill 把不可省略的验收门槛写成清单和校验器；角色可以千变万化，交付质量保持一致。</p>
+        </div>
+        <ol class="workflow">
+          <li><span>01</span><h3>锁定设计</h3><p>生成或导入严格三视图，记录比例、颜色、材质和禁止项。</p></li>
+          <li><span>02</span><h3>Blender 建模</h3><p>建立可编辑源文件、单根骨架与网页友好的网格和材质。</p></li>
+          <li><span>03</span><h3>动作制作</h3><p>基础九动作保持稳定，眨眼、蹦跳、调皮等动作按角色扩展。</p></li>
+          <li><span>04</span><h3>三轮比对</h3><p>依次校正轮廓、侧背面细节、材质和动作穿插，不改已确认结构。</p></li>
+          <li><span>05</span><h3>网页与语音</h3><p>输出框架无关插件，接入浏览器语音或宿主私有 ASR / TTS。</p></li>
+          <li><span>06</span><h3>MCP 与验收</h3><p>通过本机 MCP 控制动作，用真实浏览器、模型校验器和哈希完成交付。</p></li>
+        </ol>
+      </section>
+
+      <section class="download-section">
+        <div>
+          <p class="eyebrow">MAKE YOUR OWN</p>
+          <h2>下载后，从你的角色开始。</h2>
+          <p>压缩包包含完整 Skill、三视图提示词、动作与网页验收规则、通用发布校验器及最终版 Git 发布流程。</p>
+        </div>
+        <div class="download-actions">
+          <a class="button primary dark" href="../../SKILL.md">打开 Skill 指南 <span>↗</span></a>
+          <a class="repo-link" href="https://github.com/dashizhihuan2018-source/web-3d-pet-generator">查看公开 GitHub 仓库 ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>web-3d-pet-generator · V1.0.3</span><span>Copyright © 2026 Nankong. 保留所有权利</span></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

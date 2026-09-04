@@ -1,0 +1,19 @@
+{
+  "version": "VX.X.X",
+  "requiredActions": [
+    "Idle",
+    "Blink",
+    "Listen",
+    "Think",
+    "Speak",
+    "Wave",
+    "Celebrate",
+    "Error",
+    "Sleep"
+  ],
+  "glbCopies": [
+    "assets/models/your-pet-VX.X.X.glb",
+    "public/assets/models/your-pet-VX.X.X.glb",
+    "dist/assets/models/your-pet-VX.X.X.glb"
+  ]
+}

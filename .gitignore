@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+*.pyc
+*.blend1
+tsconfig.tsbuildinfo
+.DS_Store
+.env
+*.log
+assets/video/frames/

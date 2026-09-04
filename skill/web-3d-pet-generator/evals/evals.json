@@ -1,0 +1,10 @@
+{
+  "skill_name": "web-3d-pet-generator",
+  "evals": [
+    {"id": 1, "prompt": "Use this robot reference image to create a draggable animated 3D web pet with a private voice backend and an editable Blender source.", "expected": "Produces a reference analysis, design-lock signature, editable asset, exact named action contract, GLB, plugin contract, private speech boundary and QA evidence."},
+    {"id": 2, "prompt": "Replace the current pet with this animal mascot image but keep the host chat adapters and user preferences compatible.", "expected": "Preserves the plugin and adapter contract while rebuilding only the asset and state animation mapping."},
+    {"id": 3, "prompt": "Package the new pet for a private Git repository, delete the visible modification history, and keep only the latest version.", "expected": "Requires explicit destructive-publication authorization, creates a local bundle, builds a clean final-only snapshot, force-pushes one root commit, and verifies private visibility, single-commit history, tracked paths and remote SHA."},
+    {"id": 4, "prompt": "The blink makes the eyes disappear, Bounce and Mischief look wrong, and the close button overlaps the feet. Correct only these problems.", "expected": "Preserves accepted geometry, keeps compressed eyes visible, rebuilds readable decisive poses with exact recovery, hardens stale completion handling, and proves controls do not overlap the pet in a real browser."},
+    {"id": 5, "prompt": "Include a downloadable introduction-page preview in the Skill so anyone can replace the example with their own pet.", "expected": "Uses the bundled self-contained preview, replaces all character-specific media and copy, keeps assets local, and verifies desktop/mobile layout, video playback, links, console and requests."}
+  ]
+}

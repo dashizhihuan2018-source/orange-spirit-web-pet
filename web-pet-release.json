@@ -1,0 +1,23 @@
+{
+  "version": "V1.0.3",
+  "requiredActions": [
+    "Idle",
+    "Blink",
+    "Listen",
+    "Think",
+    "Speak",
+    "Wave",
+    "Celebrate",
+    "Error",
+    "Sleep",
+    "Bounce",
+    "Spin",
+    "Shy",
+    "Mischief"
+  ],
+  "glbCopies": [
+    "assets/models/orange-spirit-V1.0.3.glb",
+    "public/assets/models/orange-spirit-V1.0.3.glb",
+    "dist/assets/models/orange-spirit-V1.0.3.glb"
+  ]
+}
